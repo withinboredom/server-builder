@@ -1,0 +1,5 @@
+configs:
+  "docker.example.com":
+    auth:
+      username: k8s
+      password: super-secure-password

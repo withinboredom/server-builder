@@ -1,0 +1,9 @@
+apiVersion: kilo.squat.ai/v1alpha1
+kind: Peer
+metadata:
+  name: a-peer
+spec:
+  allowedIPs:
+    - 10.200.0.2/32
+  publicKey: dfsafsdf
+  persistentKeepalive: 10

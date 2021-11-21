@@ -1,0 +1,12 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: nginx
+  namespace: kube-system
+spec:
+  chart: stable/nginx-ingress
+  targetNamespace: ingress
+  set:
+    "controller.setAsDefaultIngress": "true"
+    "controller.service.create": "false"
+    "controller.service.externalTrafficPolicy": "Local"

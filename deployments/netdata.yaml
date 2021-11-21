@@ -1,0 +1,17 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: netdata
+  namespace: kube-system
+spec:
+  repo: https://netdata.github.io/helmchart/
+  targetNamespace: longhorn-system
+  chart: netdata
+  set:
+    "parent.claiming.enabled": "true"
+    # delete below this line if you don't want to use the netdata cloud, otherwise update it as appropriate
+    "parent.claiming.token": "token"
+    "parent.claiming.rooms": "room"
+    "child.claiming.enabled": "true"
+    "child.claiming.token": "token"
+    "child.claiming.rooms": "room"

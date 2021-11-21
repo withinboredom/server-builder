@@ -1,0 +1,19 @@
+{
+    "name": "withinboredom/server-builder",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ServerBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rob Landers",
+            "email": "landers.robert@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-yaml": "*",
+      "ext-readline": "*"
+    }
+}
