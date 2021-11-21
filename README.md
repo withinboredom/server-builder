@@ -96,7 +96,7 @@ problem by changing it to use your private repo later. We don't put secrets in i
 
 ## Deploy it all
 
-Now, take your user/password from your registries.yaml file and use it when you do `./deply.php user`. It'll build and
+Now, take your user/password from your registries.yaml file and use it when you do `./deploy.php user`. It'll build and
 push the docker container (requires [buildx](https://docs.docker.com/buildx/working-with-buildx/)), then deploy all the
 files in the `deployments` directory. Once the cluster stabilizes, you'll need to do some more stuff... :sigh:
 
@@ -137,4 +137,4 @@ data between requests, but I've also written a lot of Node.js, C#, and other thi
 things, very quickly, by simply pretending you can share some global state. That works, for a little while.
 
 Anyway, I'm just rambling at 3am at this point. I have no idea if any of this works. The private repo version of this is
-much better.
+much better and I'm still backporting things here.
